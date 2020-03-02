@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+
+  # This is the container that will do all of the persistence
+  microservice-example:
+    # Location of the persistence Dockerfile
+    build: ./microservice
+    # Map port 5000 in the container to port 9001 on the host machine
+    ports:
+      - "8080:5000"
+
+    restart: always
