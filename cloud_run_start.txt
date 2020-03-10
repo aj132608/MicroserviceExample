@@ -1,0 +1,7 @@
+Step 1:
+# build and tag your Docker image
+# format: docker build --tag gcr.io/PROJECT_ID/IMAGE_NAME:latest .
+
+Step 2:
+# push the image to Google's Cloud Registry
+# format: docker push gcr.io/PROJECT_ID/IMAGE_NAME:latest

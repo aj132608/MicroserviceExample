@@ -1,8 +1,9 @@
 import requests
 
+
 if __name__ == "__main__":
     # Construct the URL and message to send to the microservice
-    url = 'http://127.0.0.1:8080/post-example'
+    url = 'https://crpractice-5tfsskgkda-uc.a.run.app/post-example'
     json_message = {
         "message": "hello",
         "author": "Alex Jirovsky"
@@ -20,3 +21,4 @@ if __name__ == "__main__":
     # Print out the responses
     print(f"status code: {status_code}")
     print(f"response: {response_body}")
+    print(f"")
