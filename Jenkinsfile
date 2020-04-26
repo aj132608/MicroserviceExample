@@ -4,7 +4,13 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'bash startup.sh'
+                sh 'pip install -r requirements.txt'
+            }
+        }
+
+        stage('deploy') {
+            steps {
+                sh 'python -m microservice.app'
             }
         }
     }
